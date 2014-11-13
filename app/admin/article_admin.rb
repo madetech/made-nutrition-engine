@@ -7,6 +7,8 @@ if defined?(ActiveAdmin) and Nutrition.config.engine_active_admin
       defaults finder: :find_by_url
     end
 
+    filter :title
+
     menu label: 'Article', parent: 'Nutrition', priority: 1
 
     index do

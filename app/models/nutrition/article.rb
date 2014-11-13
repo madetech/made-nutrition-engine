@@ -26,7 +26,7 @@ module Nutrition
 
     acts_as_url :title
 
-    default_scope order: '`order` DESC'
+    default_scope order: '`order` ASC'
 
     validates_uniqueness_of :url
 

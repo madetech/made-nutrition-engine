@@ -30,6 +30,7 @@ if defined?(ActiveAdmin) and Nutrition.config.engine_active_admin
           'No'
         end
       end
+      column :category
 
       default_actions
     end
@@ -39,6 +40,7 @@ if defined?(ActiveAdmin) and Nutrition.config.engine_active_admin
         f.input :title
         f.input :page_title
         f.input :text
+        f.input :category
         f.input :order
         f.input :published
         f.input :lead_image, as: :file

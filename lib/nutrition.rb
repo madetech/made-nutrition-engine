@@ -10,8 +10,14 @@ module Nutrition
   mattr_accessor :article_class
   @@article_class = false
 
+  mattr_accessor :category_class
+  @@category_class = false
+
   mattr_accessor :article_sweeper
   @@article_sweeper = false
+
+  mattr_accessor :category_sweeper
+  @@category_sweeper = false
 
   mattr_accessor :engine_active_admin
   @@engine_active_admin = true
